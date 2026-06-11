@@ -1,0 +1,345 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Swingin' Dance Co. | Country Swing Dancing in Utah Valley"
+  description="Country swing dancing 3 nights a week across Utah Valley. Beginner lessons included every session. $6 early admission, $8 regular. The Barn, Grove Station, and Sparks Museum."
+>
+
+  <!-- HERO -->
+  <section
+    class="relative min-h-screen flex items-center justify-center text-center"
+    style="background-image: url('/images/sdc-hero.jpg'); background-size: cover; background-position: center;"
+  >
+    <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(13,11,7,0.65) 0%, rgba(13,11,7,0.55) 50%, rgba(13,11,7,0.85) 100%);"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 pt-24 pb-16">
+      <p class="text-dance-gold font-semibold text-sm tracking-[0.25em] uppercase mb-5">Utah Valley's Home for Country Swing</p>
+      <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-dance-cream leading-tight mb-6">
+        Where Country<br class="hidden sm:block" /> Meets Community
+      </h1>
+      <p class="text-dance-text/80 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
+        Three nights a week. Three venues across Utah Valley. Every session starts with a beginner lesson so anyone can join the floor.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#schedule"
+          class="px-8 py-4 bg-dance-gold text-dance-dark font-bold text-sm tracking-widest uppercase hover:bg-dance-amber transition-colors duration-200">
+          See the Schedule
+        </a>
+        <a href="/venue"
+          class="px-8 py-4 border border-dance-cream/60 text-dance-cream font-semibold text-sm tracking-widest uppercase hover:border-dance-cream hover:bg-dance-cream/10 transition-all duration-200">
+          Find a Venue
+        </a>
+      </div>
+    </div>
+    <!-- Scroll arrow -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-dance-gold/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule"
+    class="relative py-20 lg:py-28"
+    style="background-image: url('/images/sdc-wood-floor.jpg'); background-size: cover; background-position: center;"
+  >
+    <div class="absolute inset-0 bg-dance-dark/85 pointer-events-none"></div>
+    <div class="relative max-w-7xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <p class="text-dance-gold font-semibold text-sm tracking-[0.25em] uppercase mb-3">Weekly Schedule</p>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold text-dance-cream">Dancing Every Week</h2>
+        <p class="text-dance-text/60 mt-4 max-w-xl mx-auto">Early admission includes the beginner lesson. Doors open at 8:30 PM sharp.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+
+        <!-- The Barn -->
+        <div class="bg-dance-mid/80 border border-dance-warm/60 p-8 flex flex-col">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="w-2 h-2 rounded-full bg-dance-gold flex-shrink-0"></span>
+            <p class="text-dance-gold font-semibold text-xs tracking-[0.2em] uppercase">Friday</p>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-dance-cream mb-1">The Barn</h3>
+          <p class="text-dance-muted text-sm mb-6">Provo Towne Centre Mall</p>
+
+          <div class="space-y-3 mb-8 flex-1">
+            <div class="flex justify-between items-center py-3 border-b border-dance-warm/40">
+              <div>
+                <p class="text-dance-text text-sm font-medium">Early Admission</p>
+                <p class="text-dance-muted text-xs mt-0.5">8:30 PM &mdash; Lesson + Dance</p>
+              </div>
+              <span class="text-dance-gold font-bold text-xl">$6</span>
+            </div>
+            <div class="flex justify-between items-center py-3">
+              <div>
+                <p class="text-dance-text text-sm font-medium">Regular Admission</p>
+                <p class="text-dance-muted text-xs mt-0.5">9:00 PM &mdash; 1:00 AM</p>
+              </div>
+              <span class="text-dance-gold font-bold text-xl">$8</span>
+            </div>
+          </div>
+
+          <a href="/venue#the-barn"
+            class="text-center py-3 border border-dance-gold/50 text-dance-gold text-xs font-semibold tracking-widest uppercase hover:bg-dance-gold hover:text-dance-dark transition-all duration-200">
+            Venue Details
+          </a>
+        </div>
+
+        <!-- Sparks Museum -->
+        <div class="bg-dance-mid/80 border border-dance-warm/60 p-8 flex flex-col md:-mt-4 md:mb-[-1rem] relative">
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <span class="bg-dance-gold text-dance-dark text-xs font-bold tracking-widest uppercase px-4 py-1.5">Most Popular</span>
+          </div>
+          <div class="flex items-center gap-3 mb-2 mt-4">
+            <span class="w-2 h-2 rounded-full bg-dance-gold flex-shrink-0"></span>
+            <p class="text-dance-gold font-semibold text-xs tracking-[0.2em] uppercase">Thursday</p>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-dance-cream mb-1">Sparks Museum</h3>
+          <p class="text-dance-muted text-sm mb-6">West Provo</p>
+
+          <div class="space-y-3 mb-8 flex-1">
+            <div class="flex justify-between items-center py-3 border-b border-dance-warm/40">
+              <div>
+                <p class="text-dance-text text-sm font-medium">Early Admission</p>
+                <p class="text-dance-muted text-xs mt-0.5">8:30 PM &mdash; Lesson + Dance</p>
+              </div>
+              <span class="text-dance-gold font-bold text-xl">$6</span>
+            </div>
+            <div class="flex justify-between items-center py-3">
+              <div>
+                <p class="text-dance-text text-sm font-medium">Regular Admission</p>
+                <p class="text-dance-muted text-xs mt-0.5">9:00 PM &mdash; Midnight</p>
+              </div>
+              <span class="text-dance-gold font-bold text-xl">$8</span>
+            </div>
+          </div>
+
+          <a href="/venue#sparks-museum"
+            class="text-center py-3 bg-dance-gold text-dance-dark text-xs font-bold tracking-widest uppercase hover:bg-dance-amber transition-all duration-200">
+            Venue Details
+          </a>
+        </div>
+
+        <!-- Grove Station -->
+        <div class="bg-dance-mid/80 border border-dance-warm/60 p-8 flex flex-col">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="w-2 h-2 rounded-full bg-dance-gold flex-shrink-0"></span>
+            <p class="text-dance-gold font-semibold text-xs tracking-[0.2em] uppercase">Tuesday</p>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-dance-cream mb-1">Grove Station</h3>
+          <p class="text-dance-muted text-sm mb-6">Pleasant Grove</p>
+
+          <div class="space-y-3 mb-8 flex-1">
+            <div class="flex justify-between items-center py-3 border-b border-dance-warm/40">
+              <div>
+                <p class="text-dance-text text-sm font-medium">Early Admission</p>
+                <p class="text-dance-muted text-xs mt-0.5">8:30 PM &mdash; Lesson + Dance</p>
+              </div>
+              <span class="text-dance-gold font-bold text-xl">$6</span>
+            </div>
+            <div class="flex justify-between items-center py-3">
+              <div>
+                <p class="text-dance-text text-sm font-medium">Regular Admission</p>
+                <p class="text-dance-muted text-xs mt-0.5">9:00 PM &mdash; Midnight</p>
+              </div>
+              <span class="text-dance-gold font-bold text-xl">$8</span>
+            </div>
+          </div>
+
+          <a href="/venue#grove-station"
+            class="text-center py-3 border border-dance-gold/50 text-dance-gold text-xs font-semibold tracking-widest uppercase hover:bg-dance-gold hover:text-dance-dark transition-all duration-200">
+            Venue Details
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Advanced Lessons callout -->
+      <div class="mt-10 border border-dance-warm/60 bg-dance-mid/60 p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 border border-dance-gold/40 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-dance-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-dance-cream font-semibold text-sm">Advanced Country Swing Lessons</p>
+            <p class="text-dance-muted text-sm">Every Monday at The Barn &mdash; 8:00 PM to 9:00 PM. Open swing follows until 10:00 PM.</p>
+          </div>
+        </div>
+        <a href="/venue#the-barn"
+          class="shrink-0 text-dance-gold text-xs font-semibold tracking-widest uppercase underline underline-offset-4 hover:text-dance-amber transition-colors">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY / ABOUT -->
+  <section
+    class="relative py-24 lg:py-32"
+    style="background-image: url('/images/sdc-about.jpg'); background-size: cover; background-position: center top;"
+  >
+    <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(13,11,7,0.92) 40%, rgba(13,11,7,0.70) 100%);"></div>
+    <div class="relative max-w-7xl mx-auto px-6">
+      <div class="max-w-xl">
+        <p class="text-dance-gold font-semibold text-sm tracking-[0.25em] uppercase mb-4">Our Mission</p>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold text-dance-cream leading-tight mb-6">
+          More Than<br />Just Dancing
+        </h2>
+        <p class="text-dance-text/80 text-lg leading-relaxed mb-6">
+          Swingin' Dance Co. is about bringing people together. Whether you've never set foot on a dance floor or you've been swinging for years, you belong here.
+        </p>
+        <p class="text-dance-text/70 leading-relaxed mb-10">
+          Every night starts with instruction so beginners can jump right in. Every venue is a welcoming space where friendships are made and community is built. This is country swing the way it was always meant to be &mdash; inclusive, energetic, and alive.
+        </p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="border-l-2 border-dance-gold pl-4">
+            <p class="text-dance-cream font-bold text-2xl font-display">3</p>
+            <p class="text-dance-muted text-sm">Venues Across Utah Valley</p>
+          </div>
+          <div class="border-l-2 border-dance-gold pl-4">
+            <p class="text-dance-cream font-bold text-2xl font-display">3</p>
+            <p class="text-dance-muted text-sm">Nights Every Week</p>
+          </div>
+          <div class="border-l-2 border-dance-gold pl-4">
+            <p class="text-dance-cream font-bold text-2xl font-display">$6</p>
+            <p class="text-dance-muted text-sm">Early Admission with Lesson</p>
+          </div>
+          <div class="border-l-2 border-dance-gold pl-4">
+            <p class="text-dance-cream font-bold text-2xl font-display">0</p>
+            <p class="text-dance-muted text-sm">Experience Required</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE BARN FEATURE -->
+  <section class="py-24 lg:py-32 bg-dance-mid">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+        <!-- Image side -->
+        <div class="relative">
+          <img
+            src="/images/sdc-dance-7.jpg"
+            alt="The Barn interior with American flag and string lights"
+            class="w-full object-cover"
+            style="aspect-ratio: 4/3;"
+          />
+          <div class="absolute bottom-0 left-0 right-0 p-6" style="background: linear-gradient(to top, rgba(13,11,7,0.9), transparent);">
+            <img src="/images/sdc-dance-1.jpg" alt="The Barn sign"
+              class="w-40 h-auto border border-dance-warm/40"
+              style="position: absolute; bottom: -3rem; right: 1.5rem; width: 160px; height: 120px; object-fit: cover;"
+            />
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="pt-8 lg:pt-0">
+          <p class="text-dance-gold font-semibold text-sm tracking-[0.25em] uppercase mb-3">Flagship Location</p>
+          <h2 class="font-display text-4xl lg:text-5xl font-bold text-dance-cream mb-6">The Barn</h2>
+          <p class="text-dance-text/80 leading-relaxed mb-8">
+            Located inside Provo Towne Centre Mall, The Barn is our flagship venue and the heart of Swingin' Dance Co. It's got everything you need for a great night out.
+          </p>
+
+          <ul class="space-y-3 mb-10">
+            {[
+              'Custom-railed dance floor',
+              'Mechanical bull rides all night long',
+              'Pool tables and roping dummies',
+              'Every Friday from 8:30 PM to 1:00 AM',
+              'Advanced lessons every Monday',
+            ].map((item) => (
+              <li class="flex gap-3 items-start text-dance-text/80 text-sm">
+                <svg class="w-4 h-4 text-dance-gold mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="/venue#the-barn"
+              class="px-7 py-3 bg-dance-gold text-dance-dark font-bold text-sm tracking-widest uppercase hover:bg-dance-amber transition-colors">
+              View Venue
+            </a>
+            <a href="https://www.swinginmechanicalbulls.com/" target="_blank" rel="noopener"
+              class="px-7 py-3 border border-dance-warm text-dance-text/70 font-semibold text-sm tracking-widest uppercase hover:border-dance-gold hover:text-dance-gold transition-all">
+              The Bull
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO STRIP -->
+  <section class="py-20 bg-dance-dark">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="text-dance-gold font-semibold text-sm tracking-[0.25em] uppercase mb-3">Life at SDC</p>
+        <h2 class="font-display text-4xl font-bold text-dance-cream">See You On the Floor</h2>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+        {[
+          { src: '/images/sdc-dance-11.jpg', alt: 'Barn interior with pool tables' },
+          { src: '/images/sdc-dance-4.jpg',  alt: 'Mechanical bull on dance floor' },
+          { src: '/images/sdc-dance-7.jpg',  alt: 'Barn interior with American flag' },
+          { src: '/images/sdc-dance-13.jpg', alt: 'Roper on mechanical bull' },
+          { src: '/images/sdc-dance-14.jpg', alt: 'Rider on mechanical bull' },
+          { src: '/images/sdc-dance-1.jpg',  alt: 'The Barn entrance sign' },
+          { src: '/images/sdc-dance-15.jpg', alt: 'Bull riding at The Barn' },
+          { src: '/images/sdc-dance-16.jpg', alt: 'Mechanical bull action shot' },
+        ].map(({ src, alt }) => (
+          <div class="overflow-hidden aspect-square bg-dance-warm">
+            <img src={src} alt={alt} class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section
+    class="relative py-24 text-center overflow-hidden"
+    style="background-image: url('/images/sdc-floor.jpg'); background-size: cover; background-position: center;"
+  >
+    <div class="absolute inset-0 bg-dance-dark/80"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-6">
+      <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-dance-cream mb-6">
+        See You On<br />the Floor
+      </h2>
+      <p class="text-dance-text/70 text-lg mb-10 max-w-xl mx-auto">
+        Come as you are. Leave knowing how to dance. Doors open at 8:30 PM.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/venue"
+          class="px-10 py-4 bg-dance-gold text-dance-dark font-bold text-sm tracking-widest uppercase hover:bg-dance-amber transition-colors">
+          Find a Venue
+        </a>
+        <a href="/contact"
+          class="px-10 py-4 border border-dance-cream/50 text-dance-cream font-semibold text-sm tracking-widest uppercase hover:border-dance-cream hover:bg-dance-cream/10 transition-all">
+          Get In Touch
+        </a>
+      </div>
+
+      <!-- Social links -->
+      <div class="mt-12 flex items-center justify-center gap-6">
+        <a href="https://www.tiktok.com/@swingindanceco22" target="_blank" rel="noopener" class="flex items-center gap-2 text-dance-muted hover:text-dance-gold transition-colors text-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+          @swingindanceco22
+        </a>
+        <a href="https://www.instagram.com/swingindanceco" target="_blank" rel="noopener" class="flex items-center gap-2 text-dance-muted hover:text-dance-gold transition-colors text-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          @swingindanceco
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
