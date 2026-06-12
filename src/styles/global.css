@@ -24,3 +24,12 @@ html {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+::view-transition-old(root) {
+  animation-duration: 180ms;
+  animation-timing-function: ease-in;
+}
+::view-transition-new(root) {
+  animation-duration: 280ms;
+  animation-timing-function: ease-out;
+}
