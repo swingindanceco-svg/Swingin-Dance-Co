@@ -29,13 +29,13 @@ const isActive = (path: string) =>
         class="px-4 py-2 text-sm font-semibold tracking-widest uppercase text-dance-text/80 hover:text-dance-cream transition-colors duration-200">
         The Bull
       </a>
-      <a href="/contact"
-        class={`px-4 py-2 text-sm font-semibold tracking-widest uppercase transition-colors duration-200 ${isActive('/contact') ? 'text-dance-gold' : 'text-dance-text/80 hover:text-dance-cream'}`}>
-        Contact
-      </a>
       <a href="https://www.westerneventscenter.com/" target="_blank" rel="noopener"
-        class="ml-3 px-5 py-2 border border-dance-gold text-dance-gold text-sm font-semibold tracking-widest uppercase hover:bg-dance-gold hover:text-dance-dark transition-all duration-200">
+        class="px-4 py-2 text-sm font-semibold tracking-widest uppercase text-dance-text/80 hover:text-dance-cream transition-colors duration-200">
         Rent the Barn
+      </a>
+      <a href="/contact"
+        class={`ml-3 px-5 py-2 border border-dance-gold text-sm font-semibold tracking-widest uppercase transition-all duration-200 ${isActive('/contact') ? 'bg-dance-gold text-dance-dark' : 'text-dance-gold hover:bg-dance-gold hover:text-dance-dark'}`}>
+        Contact
       </a>
     </nav>
 
@@ -56,8 +56,8 @@ const isActive = (path: string) =>
       <a href="/" class={`py-3 text-sm font-semibold tracking-widest uppercase border-b border-dance-warm/40 ${isActive('/') ? 'text-dance-gold' : 'text-dance-text/80'}`}>Home</a>
       <a href="/venue" class={`py-3 text-sm font-semibold tracking-widest uppercase border-b border-dance-warm/40 ${isActive('/venue') ? 'text-dance-gold' : 'text-dance-text/80'}`}>Venues</a>
       <a href="https://www.swinginmechanicalbulls.com/" target="_blank" rel="noopener" class="py-3 text-sm font-semibold tracking-widest uppercase border-b border-dance-warm/40 text-dance-text/80">The Bull</a>
-      <a href="/contact" class={`py-3 text-sm font-semibold tracking-widest uppercase border-b border-dance-warm/40 ${isActive('/contact') ? 'text-dance-gold' : 'text-dance-text/80'}`}>Contact</a>
-      <a href="https://www.westerneventscenter.com/" target="_blank" rel="noopener" class="mt-3 py-3 text-center border border-dance-gold text-dance-gold text-sm font-semibold tracking-widest uppercase">Rent the Barn</a>
+      <a href="https://www.westerneventscenter.com/" target="_blank" rel="noopener" class="py-3 text-sm font-semibold tracking-widest uppercase border-b border-dance-warm/40 text-dance-text/80">Rent the Barn</a>
+      <a href="/contact" class={`mt-3 py-3 text-center border border-dance-gold text-sm font-semibold tracking-widest uppercase ${isActive('/contact') ? 'bg-dance-gold text-dance-dark' : 'text-dance-gold'}`}>Contact</a>
     </div>
   </nav>
 </header>
