@@ -3,9 +3,36 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  title="Swingin' Dance Co. | Country Swing Dancing in Utah Valley"
-  description="Country swing dancing 4 nights a week across Utah Valley. Beginner lessons included every session. $6 early admission, $8 regular. The Barn, Grove Station, and Sparks Museum."
+  title="Swingin' Dance Co. | Country Swing Dancing Utah Valley"
+  description="Country swing dancing 4 nights a week in Utah Valley. Beginner lessons every session. $6 early admission. Three venues: The Barn, Grove Station, and Sparks Museum."
 >
+  <link rel="preload" as="image" href="/images/sdc-hero.jpg" slot="preload" />
+
+  <script type="application/ld+json" slot="schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "EntertainmentBusiness",
+    "name": "Swingin' Dance Co.",
+    "url": "https://www.swingindanceco.com",
+    "telephone": "+1-801-420-7489",
+    "email": "swingindanceco@gmail.com",
+    "description": "Country swing dancing 4 nights a week across Utah Valley. Beginner lessons included every session.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1200 Towne Centre Blvd, Suite 1130",
+      "addressLocality": "Provo",
+      "addressRegion": "UT",
+      "postalCode": "84601",
+      "addressCountry": "US"
+    },
+    "openingHours": ["Mo 20:30-22:00", "Tu 20:30-24:00", "Th 20:30-24:00", "Fr 20:30-01:00"],
+    "priceRange": "$6-$8",
+    "sameAs": [
+      "https://www.instagram.com/swingindanceco",
+      "https://www.tiktok.com/@swingindanceco22"
+    ]
+  }
+  </script>
 
   <!-- HERO -->
   <section
@@ -232,7 +259,7 @@ import Layout from '../layouts/Layout.astro';
             loading="lazy"
           />
           <div class="absolute bottom-0 left-0 right-0 p-6" style="background: linear-gradient(to top, rgba(13,11,7,0.9), transparent);">
-            <img src="/images/sdc-dance-1.jpg" alt="The Barn sign"
+            <img src="/images/sdc-dance-1.jpg" alt="The Barn rope lettering sign at the entrance"
               class="w-40 h-auto border border-dance-warm/40"
               style="position: absolute; bottom: -3rem; right: 1.5rem; width: 160px; height: 120px; object-fit: cover;"
             />
@@ -288,14 +315,14 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
         {[
-          { src: '/images/sdc-dance-11.jpg', alt: 'Barn interior with pool tables' },
-          { src: '/images/sdc-dance-4.jpg',  alt: 'Mechanical bull on dance floor' },
-          { src: '/images/sdc-dance-7.jpg',  alt: 'Barn interior with American flag' },
-          { src: '/images/sdc-dance-13.jpg', alt: 'Roper on mechanical bull' },
-          { src: '/images/sdc-dance-14.jpg', alt: 'Rider on mechanical bull' },
-          { src: '/images/sdc-dance-1.jpg',  alt: 'The Barn entrance sign' },
-          { src: '/images/sdc-dance-15.jpg', alt: 'Bull riding at The Barn' },
-          { src: '/images/sdc-dance-16.jpg', alt: 'Mechanical bull action shot' },
+          { src: '/images/sdc-dance-11.jpg', alt: 'The Barn interior showing pool tables and booth seating' },
+          { src: '/images/sdc-dance-4.jpg',  alt: 'Mechanical bull and lasso on the wood dance floor at The Barn' },
+          { src: '/images/sdc-dance-7.jpg',  alt: 'The Barn dance floor with American flag and string lights overhead' },
+          { src: '/images/sdc-dance-13.jpg', alt: 'Cowboy standing on mechanical bull with lasso at The Barn' },
+          { src: '/images/sdc-dance-14.jpg', alt: 'Rider holding on during mechanical bull ride at The Barn Provo' },
+          { src: '/images/sdc-dance-1.jpg',  alt: 'The Barn rope lettering sign at the venue entrance' },
+          { src: '/images/sdc-dance-15.jpg', alt: 'Mechanical bull rider leaning back at The Barn' },
+          { src: '/images/sdc-dance-16.jpg', alt: 'Action shot of mechanical bull rider at The Barn Provo UT' },
         ].map(({ src, alt }) => (
           <div class="overflow-hidden aspect-square bg-dance-warm">
             <img src={src} alt={alt} class="w-full h-full object-cover" loading="lazy" />
