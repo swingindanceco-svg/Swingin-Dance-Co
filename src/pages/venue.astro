@@ -3,9 +3,75 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  title="Venues | Swingin' Dance Co. - Three Locations in Utah Valley"
-  description="Three country swing dance venues across Utah Valley. The Barn in Provo, Grove Station in Pleasant Grove, and Sparks Museum in West Provo. Dancing Tuesday, Thursday, and Friday."
+  title="Dance Venues in Utah Valley | Swingin' Dance Co."
+  description="Three country swing dance venues across Utah Valley. The Barn in Provo (Mon & Fri), Grove Station in Pleasant Grove (Tue), and Sparks Museum in West Provo (Thu). $6-$8 admission."
 >
+  <script type="application/ld+json" slot="schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Swingin' Dance Co. Venues",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "DanceGroup",
+          "@id": "https://www.swingindanceco.com/venue#the-barn",
+          "name": "The Barn - Swingin' Dance Co.",
+          "url": "https://www.swingindanceco.com/venue#the-barn",
+          "telephone": "+1-801-420-7489",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1200 Towne Centre Blvd, Suite 1130",
+            "addressLocality": "Provo",
+            "addressRegion": "UT",
+            "postalCode": "84601",
+            "addressCountry": "US"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "DanceGroup",
+          "@id": "https://www.swingindanceco.com/venue#grove-station",
+          "name": "Grove Station - Swingin' Dance Co.",
+          "url": "https://www.swingindanceco.com/venue#grove-station",
+          "telephone": "+1-801-608-6002",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "273 S 2000 W",
+            "addressLocality": "Pleasant Grove",
+            "addressRegion": "UT",
+            "postalCode": "84062",
+            "addressCountry": "US"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "DanceGroup",
+          "@id": "https://www.swingindanceco.com/venue#sparks-museum",
+          "name": "Sparks Museum - Swingin' Dance Co.",
+          "url": "https://www.swingindanceco.com/venue#sparks-museum",
+          "telephone": "+1-801-477-6977",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "4134 W Center St",
+            "addressLocality": "Provo",
+            "addressRegion": "UT",
+            "postalCode": "84601",
+            "addressCountry": "US"
+          }
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- HERO -->
   <section
@@ -142,7 +208,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="order-2 lg:order-1">
           <div class="flex items-center gap-3 mb-2">
             <span class="w-2 h-8 bg-dance-gold"></span>
-            <p class="text-dance-gold font-semibold text-xs tracking-[0.2em] uppercase">Tuesday Nights -Pleasant Grove</p>
+            <p class="text-dance-gold font-semibold text-xs tracking-[0.2em] uppercase">Tuesday Nights - Pleasant Grove</p>
           </div>
           <h2 class="font-display text-4xl lg:text-5xl font-bold text-dance-cream mb-2 ml-5">Grove Station</h2>
           <p class="text-dance-muted text-sm ml-5 mb-8">273 S 2000 W, Pleasant Grove</p>
@@ -218,7 +284,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="order-1 lg:order-2 grid grid-cols-2 gap-3">
           <img src="/images/grove-hero.webp" alt="Grove Station exterior, Pleasant Grove" class="w-full col-span-2 object-cover" style="height: 280px;" loading="lazy" />
           <img src="/images/grove-2.jpg" alt="Grove Station interior with draped ceiling and string lights" class="w-full object-cover" style="height: 200px;" loading="lazy" />
-          <img src="/images/grove-3.jpg" alt="Dancers at Grove Station" class="w-full object-cover" style="height: 200px;" loading="lazy" />
+          <img src="/images/grove-3.jpg" alt="Packed dance floor at Grove Station on a Tuesday night" class="w-full object-cover" style="height: 200px;" loading="lazy" />
         </div>
       </div>
     </div>
@@ -240,7 +306,7 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <div class="flex items-center gap-3 mb-2">
             <span class="w-2 h-8 bg-dance-gold"></span>
-            <p class="text-dance-gold font-semibold text-xs tracking-[0.2em] uppercase">Thursday Nights -West Provo</p>
+            <p class="text-dance-gold font-semibold text-xs tracking-[0.2em] uppercase">Thursday Nights - West Provo</p>
           </div>
           <h2 class="font-display text-4xl lg:text-5xl font-bold text-dance-cream mb-2 ml-5">Sparks Museum</h2>
           <p class="text-dance-muted text-sm ml-5 mb-8">4134 W Center St, Provo</p>
